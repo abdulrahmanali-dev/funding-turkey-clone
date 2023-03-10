@@ -1,0 +1,234 @@
+/*Global Rules Start*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+:root {
+  --dark: #2d2c2c;
+  --red: #ea2427;
+  --dark_gray: #6d6b6b;
+  --gray: #e7e7e6;
+  --light-gray: #f0f0f2;
+  --light: #fcfcfa;
+}
+
+body {
+  font-family: Arial, tahoma, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+.btn {
+  border: none;
+  padding: 10px 20px;
+  height: fit-content;
+  background-color: var(--dark_gray);
+  line-height: 0.4;
+  color: white;
+}
+.btn:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+.butn {
+  background-color: var(--gray);
+  border-radius: 0;
+  padding: 20px 25px;
+  margin: 20px 0;
+  height: fit-content;
+  text-align: center;
+  color: var(--dark);
+
+  @media (min-width: 991px) {
+    margin: 0;
+  }
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
+}
+/*Global Rules End*/
+/*Header Start*/
+
+header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  &.active {
+    background-color: var(--gray) !important;
+  }
+
+  .logo {
+    height: 80px;
+    padding: 10px 0;
+    img {
+      height: 100%;
+    }
+  }
+  .nav-bar a {
+    color: var(--gray);
+    font-size: 18px;
+    padding: 0 20px;
+    letter-spacing: 0.4px;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    .nav-bar a {
+      font-size: 15px;
+      padding: 0 10px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    .icons #menu-bars {
+      display: block;
+    }
+    .nav-bar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      transition: 0.2s linear;
+      text-align: center;
+      background-color: var(--gray);
+      padding: 20px 0;
+      display: none;
+      &.active {
+        display: block;
+      }
+      a {
+        display: block;
+        font-size: 18px;
+        color: var(--dark_gray);
+        padding: 15px 0;
+      }
+    }
+  }
+}
+
+/*Header End*/
+/* Contact Us Section Starts */
+.contact-us {
+  background: url("../Mobile/FundingTurkey_FeatureImage_Contact_Mobile.png");
+  min-height: 120vh;
+  background-size: cover;
+  padding-top: 110px;
+  @media (min-width: 450px) {
+    background: url("../Desktop/FeatureImage_Contact_Desktop.png");
+    background-size: cover;
+  }
+  h1 {
+    font-weight: bold;
+    margin: 30px 0;
+  }
+
+  form {
+    margin: auto;
+    margin-top: 80px;
+    padding: 10px;
+    @media (min-width: 576px) {
+      width: 400px;
+      padding: 30px;
+      background-color: var(--gray);
+      margin: 0;
+      margin-top: 80px;
+    }
+    @media (max-width: 768px) {
+      max-width: 400px;
+      padding: 30px;
+      background-color: var(--gray);
+      margin: auto;
+      margin-top: 80px;
+    }
+
+    h3 {
+      @media (min-width: 576px) {
+        font-size: 18px;
+      }
+      font-size: 15px;
+      font-weight: bold;
+    }
+    input {
+      border: none;
+      width: 100%;
+      max-width: 400px;
+      padding: 8px 20px;
+      color: var(--dark);
+      margin: 20px auto;
+      font-weight: bold;
+      &::placeholder {
+        font-style: italic;
+        color: var(--dark_gray);
+        font-weight: bold;
+      }
+    }
+    button {
+      border: none;
+      background-color: var(--red);
+      padding: 8px 20px;
+      color: white;
+    }
+  }
+}
+/*  Contact Us Section Ends */
+
+/*Footer Start*/
+footer {
+  background-color: var(--gray);
+  padding: 20px;
+  .logo {
+    img {
+      width: 150px;
+    }
+  }
+  .contact {
+    position: relative;
+    > img {
+      @media (min-width: 576px) {
+        margin: auto;
+        max-width: 90%;
+      }
+    }
+    .box {
+      padding: 10px;
+      padding-top: 20px;
+      img {
+        margin: auto;
+        width: 22px;
+        @media (min-width: 576px) {
+          margin: 0;
+        }
+      }
+      p {
+        margin: 0;
+        padding: 10px;
+        text-transform: none;
+        font-size: 12px;
+      }
+    }
+  }
+}
+/* End Footer */

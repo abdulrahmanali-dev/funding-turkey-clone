@@ -1,0 +1,220 @@
+/*Global Rules Start*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+:root {
+  --dark: #2d2c2c;
+  --red: #ea2427;
+  --dark_gray: #6d6b6b;
+  --gray: #e7e7e6;
+  --light-gray: #f0f0f2;
+  --light: #fcfcfa;
+}
+
+body {
+  font-family: Arial, tahoma, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  border: none;
+  padding: 10px 20px;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: var(--dark_gray);
+  line-height: 0.4;
+  color: white;
+}
+
+.btn:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+/*Global Rules End*/
+/*Header Start*/
+header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+header.active {
+  background-color: var(--gray) !important;
+}
+header .logo {
+  height: 80px;
+  padding: 10px 0;
+}
+header .logo img {
+  height: 100%;
+}
+header .nav-bar a {
+  color: var(--gray);
+  font-size: 18px;
+  padding: 0 20px;
+  letter-spacing: 0.4px;
+}
+
+@media (max-width: 991px) {
+  header .nav-bar a {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 768px) {
+  header .icons #menu-bars {
+    display: block;
+  }
+  header .nav-bar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    transition: 0.2s linear;
+    text-align: center;
+    background-color: var(--gray);
+    padding: 20px 0;
+    display: none;
+  }
+  header .nav-bar.active {
+    display: block;
+  }
+  header .nav-bar a {
+    display: block;
+    font-size: 18px;
+    color: var(--dark_gray);
+    padding: 15px 0;
+  }
+}
+/*Header End*/
+/*Footer Start*/
+footer {
+  background-color: var(--gray);
+  padding: 20px;
+}
+footer .logo img {
+  width: 150px;
+}
+footer .contact {
+  position: relative;
+}
+@media (min-width: 576px) {
+  footer .contact > img {
+    margin: auto;
+    max-width: 90%;
+  }
+}
+footer .contact .box {
+  padding: 10px;
+  padding-top: 20px;
+}
+footer .contact .box img {
+  margin: auto;
+  width: 22px;
+}
+@media (min-width: 576px) {
+  footer .contact .box img {
+    margin: 0;
+  }
+}
+footer .contact .box p {
+  margin: 0;
+  padding: 10px;
+  text-transform: none;
+  font-size: 12px;
+}
+
+/* End Footer */
+/* About Us Section Starts */
+.about-us {
+  background: url("../Desktop/FundingTurkey_BG_Blank_Concrete.jpg") bottom;
+  min-height: 100vh;
+  background-size: cover;
+  padding-top: 110px;
+}
+.about-us h1 {
+  font-weight: bold;
+  margin: 30px 0;
+}
+.about-us .box {
+  border: var(--dark_gray) solid;
+  font-size: 21px;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.about-us .box p {
+  cursor: pointer;
+  padding: 5px 20px;
+  margin: 0;
+}
+.about-us .box p.active {
+  background-color: var(--red);
+  color: white;
+}
+.about-us .article:not(.first) {
+  display: none;
+}
+@media (max-width: 768px) {
+  .about-us .article {
+    padding: 0;
+    margin: 0;
+  }
+}
+.about-us .article h3 {
+  padding-bottom: 20px;
+}
+.about-us .article .butn {
+  background-color: var(--gray);
+  border-radius: 0;
+  padding: 20px 25px;
+  margin: 20px 0;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  color: var(--dark);
+}
+@media (min-width: 991px) {
+  .about-us .article .butn {
+    margin: 0;
+  }
+}
+@media (min-width: 768px) {
+  .about-us .article .butn {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .about-us .article .half {
+    padding: 0;
+    margin: 0;
+  }
+}
+.about-us .article .half p {
+  font-size: 15px;
+}
+
+/*  About Us Section Ends */ /*# sourceMappingURL=style.css.map */

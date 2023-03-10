@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="160.261" viewBox="0 0 200 160.261">
+  <g id="Group_87" data-name="Group 87" transform="translate(-3100 -2315)">
+    <path id="Ruby_Texture_PT" d="M200,0,0,16.2V160.261H200Z" transform="translate(3100 2315)" fill="#6d6b6b"/>
+    <g id="Group_84" data-name="Group 84" transform="translate(1450.852 -766.69)">
+      <rect id="Rectangle_39" data-name="Rectangle 39" width="3.247" height="15.94" transform="translate(1752.395 3182.755)" fill="#f0f0f2"/>
+      <rect id="Rectangle_40" data-name="Rectangle 40" width="3.542" height="15.94" transform="translate(1742.654 3182.755)" fill="#f0f0f2"/>
+      <rect id="Rectangle_41" data-name="Rectangle 41" width="23.025" height="3.837" transform="translate(1737.635 3171.538)" fill="#f0f0f2"/>
+      <rect id="Rectangle_42" data-name="Rectangle 42" width="3.247" height="15.94" transform="translate(1733.208 3182.755)" fill="#f0f0f2"/>
+      <path id="Path_132" data-name="Path 132" d="M605.148,530.69a50,50,0,1,0,50,50,50,50,0,0,0-50-50m25.091,76.3v6.2H579.761v-6.2h3.247v-15.94h-3.247v-6.2h7.97v-5.018h-4.723v-4.428h3.246a18.9,18.9,0,0,1,14.169-16.826v-5.314h3.247V541.444c4.128-4.128,6.259,1.637,9.428,1.637v6.182c-3.083,0-4.9-3.21-6.476-1.637v5.344h3.247v5.314a18.9,18.9,0,0,1,14.17,16.826h3.247v4.428h-4.723v5.018h7.97v6.494h-3.543v15.94Z" transform="translate(1144 2592)" fill="#f0f0f2"/>
+      <rect id="Rectangle_43" data-name="Rectangle 43" width="2.952" height="15.94" transform="translate(1762.136 3182.755)" fill="#f0f0f2"/>
+    </g>
+  </g>
+</svg>
